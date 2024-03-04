@@ -30,19 +30,20 @@
       <p class="modal-subtitle">
         Contribute to our cloud cost-solving AI project by sharing your cloud architecture diagrams.
       </p>
-      <form class='form' name='doomoutForm' method='POST'><input type='hidden' name='form-name' value='doomoutForm' />
+      <form class='form' id="cloudForm" name='cloudForm' method='POST'><input type='hidden' name='form-name' value='Form' />
+        <div class="alert">Your File Uploaded Successfully</div>
         <div class="group">
-          <input type="text" id="firstName" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
+          <input type="text" id="name" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
           <label for="first-name">First name</label>
           <span class="border"></span>
         </div>
         <div class="group">
-          <input type="email" name="email" placeholder="&nbsp;" autocomplete="off" required>
+          <input type="email" id="emailid" name="email" placeholder="&nbsp;" autocomplete="off" required>
           <label for="email">Email</label>
           <span class="border"></span>
         </div>
         <div class="group">
-          <input type="file" name="file" id="file" class="hidden" autocomplete="off" required />
+          <input type="file" id="msgContent" name="file" id="file" class="hidden" autocomplete="off" required />
           <label for="file" class="file-label">
             <span class="file-icon">📂</span>
             Choose a file
@@ -151,7 +152,7 @@
         <div class="slide"><img src="images/screen-illo-6.png" alt="inboxzero"/></div>
       </div>
     </section>
-    <section class="section cta" style="margin-top: 50px;">
+    <section class="section cta" style="margin-top: 100px;">
       <div class="cta-content">
         <h1 class="title">Join the cloud-wise and revolutionize your cloud experience.</h1>
         <button class="button white modal-toggle">Join the waitlist</button>
@@ -245,7 +246,9 @@
 
   });
 </script>
-
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
