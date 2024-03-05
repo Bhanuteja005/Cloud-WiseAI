@@ -829,13 +829,14 @@ button {
 }
 
 .logo {
-    height: 100px;
+    height: 150px;
     width: 100px;
     z-index: 2;
     top: 0
 }
 
 .logo img {
+    height: 100px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     width: 41px
@@ -1805,6 +1806,8 @@ a:hover {
 @media (max-width: 600px) {
     .screen-wrapper {
         padding: 0;
+        border-radius: 50px;
+    width: 350px;
     }
 }
 
